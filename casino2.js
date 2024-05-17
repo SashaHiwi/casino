@@ -146,13 +146,6 @@ cup.addEventListener("click", () => {
 	document.querySelector(".leaderBoard").style.visibility = "visible"
 	document.querySelector(".blur").style.display = "block"
 })
-close.forEach(le => {
-	le.addEventListener("click", () => {
-		document.querySelector(".settingPop").style.visibility = "hidden"
-		document.querySelector(".leaderBoard").style.visibility = "hidden"
-		document.querySelector(".blur").style.display = "none"
-	})
-});
 blur.addEventListener("click", () => {
 		document.querySelector(".settingPop").style.visibility = "hidden"
 		document.querySelector(".leaderBoard").style.visibility = "hidden"
