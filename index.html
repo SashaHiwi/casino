@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="casino2.css">
+	<title>Casino</title>
+</head>
+<body>
+	<div class="entry logIn">
+		<div class="back">
+			<div class="title">Вход</div>
+			<input type="text" class="logInput" placeholder="Логин">
+			<input type="password" class="logPass" placeholder="Пароль">
+			<div class="logError loginErr"></div>
+			<div class="ready login">Войти</div>
+		</div>
+			<div class="other signinOther">Регистрация</div>
+	</div>
+	<div class="entry signIn">
+		<div class="back">
+			<div class="title">Регистрация</div>
+			<input type="text" class="signInput" placeholder="Придумайте логин">
+			<input type="password" class="signPass" placeholder="Придумайте пароль">
+			<div class="logError signinErr"></div>
+			<div class="ready signin">Регистрация</div>
+		</div>
+			<div class="other loginOther">Вход</div>
+	</div>
+	<div class="game">
+		<div class="nav">
+			<div class="score">Ваш счет: 9999</div>
+			<div class="spins">Попыток: 10</div>
+		</div>
+		<div class="container">
+			<div class="blur"></div>
+			<div class="casino">
+					<div class="nums">
+						<div class="num num1">0</div>
+						<div class="num num2">0</div>
+						<div class="num num3">0</div>
+					</div>
+				<div class="plus"></div>
+				<img src="slot.png" alt="slot" class="slot">
+				<div class="start str">Старт</div>
+			</div>
+			 <div class="menu">
+				<img src="settings.svg" alt="setting" class="setting">
+				<img src="cup.svg" alt="cup" class="cup">
+			</div>
+				<div class="settingPop">
+					<div class="animation">Анимация<br><button class="animationButton"></button></div>
+				</div>
+				<div class="leaderBoard"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="casino2.js"></script>
+</body>
+</html>

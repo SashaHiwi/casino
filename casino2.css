@@ -1,0 +1,365 @@
+body{
+	margin: 0;
+	background: linear-gradient(to bottom right, #c4fbda, #fbef60);
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+.container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 12px;
+}
+.casino{
+	margin-top: 20px;
+	display: flex;
+    justify-content: center;
+}
+.nums{
+    position: absolute;
+    display: flex;
+}
+.num{
+	position: absolute;
+	font-weight: 800;
+}
+.slot{
+	position: absolute;
+	z-index: -1;
+}
+.start{
+	font-weight: 600;
+	border: 3px solid black;
+	border-radius: 8px;
+	padding: 8px 17px;
+	cursor: pointer;
+	background-color: white;
+	user-select: none;
+}
+.menu{
+	margin-top: 20px;
+	display: flex;
+}
+.menu img{
+	cursor: pointer;
+}
+.plus{
+	position: absolute;
+	z-index: -2;
+}
+.settingPop{
+	position: absolute;
+	text-align: center;
+	background-color: white;
+	visibility: hidden;
+	border-radius: 10px;
+}
+.animationButton{
+	background-color: #3beb3b;
+	border-radius: 3px;
+	border: 1 solid black;
+}
+.blur{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	background-color: black;
+	display: none;
+}
+.close{
+	cursor: pointer;
+}
+.leaderBoard{
+	position: absolute;
+	text-align: center;
+	background-color: white;
+	visibility: hidden;
+	border-radius: 10px;
+	overflow: auto;
+}
+.game{
+	display: none;
+}
+
+.entry{
+	flex-direction: column;
+	align-items: center;
+    padding-top: 40px;
+}
+.logIn{
+	display: flex;
+}
+.signIn{
+	display: none;
+}
+.back{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.ready{
+	background-color: #abebca;
+	cursor: pointer;
+	border: 1px solid black;
+}
+.other{
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+.logError{
+	color: red;
+}
+
+@media(max-width: 249px){
+	*{
+		font-size: 10px;
+	}
+	.slot{
+		width: 150px;
+	}
+	.nav{
+    	padding: 5px 5px;
+	}
+	.num{
+		font-size: 30px;
+	}
+	.nums{
+		margin-top: 17px;
+	}
+	.start{
+		margin-top: 80px;
+		font-size: 16px;
+		border: 2px solid black;
+	}
+	.menu{
+		margin-top: 40px;
+		gap: 30px;
+	}
+	.menu img{
+		width: 20px;
+	}
+	.num1{
+		left: -50px;
+	}
+	.num2{
+		left: -8px;
+	}
+	.num3{
+		left: 34px;
+	}
+	.settingPop{
+		padding-top: 10px;
+		width: 125px;
+		height: 150px;
+	}
+	.leaderBoard{
+		padding: 10px 0;
+		width: 125px;
+		height: 150px;		
+	}
+	.close{	
+		width: 20px;
+	}
+	.animationButton{
+		width: 15px;
+		height: 15px;
+	}
+
+	.back{
+		padding: 10px 15px;
+		border-radius: 20px;
+	}
+	.title{
+		font-weight: 600;
+		font-size: 20px;
+	}
+	.back input{
+		width: 80%;
+		border-radius: 10px;
+		margin-top: 15px;
+		padding-left: 5px;
+		padding: 2px 3px;
+	}
+	.ready{
+		margin-top: 15px;
+		padding: 10px 20px;
+		border-radius: 6px;
+	}
+	.other{
+		margin-top: 10px;
+		font-size: 10px;
+	}
+	.logError{
+		margin-top: 5px;
+		font-size: 9px;
+	}
+}
+@media(min-width: 250px){
+	.slot{
+		width: 250px;
+	}
+	.num{
+		font-size: 55px;
+	}
+	.nums{
+		margin-top: 25px;
+	}
+	.start{
+		margin-top: 140px;
+		font-size: 30px;
+	}
+	.menu{
+		margin-top: 60px;
+		gap: 50px;
+	}
+	.menu img{
+		width: 40px;
+	}
+	.num1{
+		left: -84px;
+	}
+	.num2{
+		left: -14px;
+	}
+	.num3{
+		left: 56px;
+	}
+	.settingPop{
+		padding-top: 15px;
+		width: 200px;
+		height: 230px;
+	}
+	.leaderBoard{
+		padding: 15px 0;
+		width: 200px;
+		height: 230px;
+	}
+	.close{	
+		width: 30px;
+	}
+	.animationButton{
+		width: 20px;
+		height: 20px;
+	}
+
+	.back{
+		padding: 15px 30px;
+		border-radius: 20px;
+	}
+	.title{
+		font-weight: 600;
+		font-size: 30px;
+	}
+	.back input{
+		width: 150px;
+		border-radius: 10px;
+		margin-top: 15px;
+		padding-left: 5px;
+		padding: 2px 3px;
+	}
+	.ready{
+		margin-top: 30px;
+		padding: 10px 20px;
+		border-radius: 6px;
+	}
+	.other{
+		margin-top: 10px;
+		font-size: 15px;
+	}
+	.logError{
+		margin-top: 5px;
+		font-size: 15px;
+	}
+}
+@media(min-width: 400px){
+	*{
+		font-size: 24px;
+	}
+	.slot{
+		width: 400px;
+	}
+	.num{
+		font-size: 88px;
+	}
+	.nums{
+		margin-top: 40px;
+	}
+	.start{
+		margin-top: 220px;
+		font-size: 44px;
+	}
+	.menu{
+		margin-top: 80px;
+		gap: 80px;
+	}
+	.menu img{
+		width: 60px;
+	}
+	.num1{
+		left: -133px;
+	}
+	.num2{
+		left: -23px;
+	}
+	.num3{
+		left: 88px;
+	}
+	.animation{
+		font-size: 30px;
+	}
+	.settingPop{
+		padding-top: 30px;
+		width: 350px;
+		height: 360px;
+	}
+	.leaderBoard{
+		padding: 30px 0;
+		width: 350px;
+		height: 360px;	
+	}
+	.close{	
+		width: 40px;
+	}
+	.animationButton{
+		width: 25px;
+		height: 25px;
+	}
+
+	.back{
+		padding: 30px 60px;
+		border-radius: 20px;
+	}
+	.title{
+		font-weight: 600;
+		font-size: 30px;
+	}
+	.back input{
+		width: 250px;
+		border-radius: 10px;
+		margin-top: 15px;
+		padding-left: 5px;
+	}
+	.ready{
+		margin-top: 30px;
+		padding: 15px 30px;
+		border-radius: 6px;
+	}
+	.other{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	.logError{
+		margin-top: 5px;
+		font-size: 20px;
+	}
+}
